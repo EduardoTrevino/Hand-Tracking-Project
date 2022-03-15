@@ -16,6 +16,7 @@ while (True):
     # can remove drawing under (img, draw=False)
     lmList = detector.findPosition(img)
     if len(lmList) != 0:
+        # returns the specifed landmark as a list indicating landmark number and pixel region detected on camera
         print(lmList[4])
 
     cTime = time.time()
